@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 213 47% 97%;
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    --primary: 214 77% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 52% 92%;
+    --secondary-foreground: 214 77% 28%;
+
+    --muted: 216 20% 95%;
+    --muted-foreground: 215 14% 46%;
+
+    --accent: 214 60% 95%;
+    --accent-foreground: 214 77% 28%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 214 77% 28%;
+
+    --radius: 0.5rem;
+
+    --nav-bg: 0 0% 100%;
+    --nav-border: 214 20% 92%;
+    --link: 214 77% 40%;
+    --link-hover: 214 77% 28%;
+    --badge-bg: 214 60% 95%;
+    --badge-text: 214 77% 28%;
+    --progress-bar: 214 77% 28%;
+    --progress-track: 214 20% 90%;
+    --success: 142 71% 35%;
+    --warning: 30 90% 50%;
+    --threshold-green: 142 71% 35%;
+    --threshold-orange: 30 90% 50%;
+    --threshold-red: 0 84% 50%;
+    --surface-filter: 213 52% 95%;
+    --segment-active: 208 59% 80%;
+    --segment-border: 212 42% 67%;
+    --surface-panel: 214 50% 94%;
+    --icon-accent-bg: 213 62% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
